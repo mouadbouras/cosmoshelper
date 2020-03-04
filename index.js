@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 
-exec("netstat -ano|findstr 'pid: 8081'", (error, stdout, stderr) => {
+exec("netstat -ano | findstr 'pid: 8081'", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
